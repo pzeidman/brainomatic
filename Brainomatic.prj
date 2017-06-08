@@ -1,0 +1,293 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="522155136" file="/Users/Peterz/Documents/brainomatic/Brainomatic.prj" location="/Users/Peterz/Documents/brainomatic" name="Brainomatic" preferred-package-location="/Users/Peterz/Documents/brainomatic/Brainomatic/for_redistribution" preferred-package-type="package.type.app" target="target.ezdeploy.standalone" target-name="MATLAB Compiler for Standalone Applications">
+    <param.appname>Brainomatic</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>Peter Zeidman</param.authnamewatermark>
+    <param.email>peter.zeidman@ucl.ac.uk</param.email>
+    <param.company />
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>/Brainomatic/</param.installpath.string>
+    <param.installpath.combo>option.installpath.systemwideapp</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.intermediate>${PROJECT_ROOT}/Brainomatic/for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}/Brainomatic/for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}/Brainomatic/for_redistribution</param.output>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.server.ctf>${PROJECT_ROOT}/Brainomatic/for_testing/.ctf</param.server.ctf>
+    <param.server.readme>${PROJECT_ROOT}/Brainomatic/for_testing/readme.txt</param.server.readme>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.required.mcr.products>
+      <item>35000</item>
+      <item>35001</item>
+    </param.required.mcr.products>
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.company />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.server.ctf />
+      <param.server.readme />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/brainomatic.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${MATLAB_ROOT}/toolbox/local/userpath.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/Contents.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/cat.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/ctranspose.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/disp.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/display.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/double.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/end.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/fieldnames.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/file_array.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/horzcat.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/initialise.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/isnan.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/length.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/loadobj.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/ndims.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/numel.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/numeric.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/permute.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/private/datatypes.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/private/dim.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/private/dtype.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/private/file2mat.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/private/file2mat.mexmaci64</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/private/fname.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/private/init.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/private/init.mexmaci64</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/private/mat2file.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/private/mat2file.mexmaci64</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/private/mystruct.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/private/offset.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/private/permission.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/private/resize_scales.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/private/scl_inter.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/private/scl_slope.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/reshape.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/size.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/subsasgn.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/subsref.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/transpose.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@file_array/vertcat.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/Contents.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/create.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/disp.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/display.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/fieldnames.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/nifti.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/private/M2Q.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/private/Q2M.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/private/decode_qform0.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/private/empty_hdr.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/private/encode_qform0.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/private/findindict.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/private/getdict.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/private/mayo2nifti1.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/private/mayostruc.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/private/nifti1struc.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/private/nifti2struc.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/private/nifti_stats.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/private/niftistruc.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/private/read_extras.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/private/read_hdr.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/private/read_hdr_raw.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/private/write_extras.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/private/write_hdr_raw.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/structn.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/subsasgn.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@nifti/subsref.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/Contents.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/add.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/attributes.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/branch.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/char.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/children.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/convert.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/copy.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/delete.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/display.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/editor.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/find.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/flush.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/get.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/getfilename.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/isfield.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/length.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/move.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/parent.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/private/xml_findstr.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/private/xml_findstr.mexmaci64</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/private/xml_parser.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/root.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/save.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/set.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/setfilename.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/view.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/@xmltree/xmltree.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/external/signal/hanning.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/external/signal/window.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/ft_defaults.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/preproc/ft_preproc_padding.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/private/mergeconfig.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/specest/ft_specest_mtmfft.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/specest/private/fixname.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/specest/private/ft_getopt.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/specest/private/ft_preproc_polyremoval.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/specest/private/ft_warning.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/specest/private/getsubfield.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/specest/private/issubfield.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/specest/private/rmsubfield.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/specest/private/setsubfield.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/specest/private/sine_taper.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/specest/private/sine_taper_scaled.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/ft_getopt.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/ft_getopt.mexmaci64</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/ft_hash.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/ft_hastoolbox.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/ft_platform_supports.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/ft_progress.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/ft_trackusage.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/ft_version.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/ft_warning.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/getsubfield.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/hasyokogawa.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/issubfield.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/private/CalcMD5.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/private/base64encode.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/private/fixname.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/private/ft_struct2json.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/private/ft_urlread.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/private/getaddress.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/private/gethostname.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/private/getusername.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/private/mergeconfig.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/private/mxSerialize.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/rmsubfield.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/fieldtrip/utilities/setsubfield.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/external/yokogawa_meg_reader/getYkgwVersion.p</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_DesMtx.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_FcUtil.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_SpUtil.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_Welcome.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_authors.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_browser.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_bsplinc.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_bsplinc.mexmaci64</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_check_installation.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_check_version.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_clf.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_conman.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_defaults.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_existfile.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_existfile.mexmaci64</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_figure.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_file.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_file_template.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_fileparts.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_flip_analyze_images.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_get_defaults.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_help.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_input.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_jobman.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_jsonread.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_jsonread.mexmaci64</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_platform.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_print.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_select.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_sp.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_toolbox.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_type.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_unlink.m</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_unlink.mexmaci64</file>
+      <file>/Users/Peterz/Documents/MATLAB/spm12trunk/spm_update.m</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}/Brainomatic/for_testing" name="Brainomatic.app" optional="false">/Users/Peterz/Documents/brainomatic/Brainomatic/for_testing/Brainomatic.app</file>
+      <file location="${PROJECT_ROOT}/Brainomatic/for_testing" name="splash.png" optional="false">/Users/Peterz/Documents/brainomatic/Brainomatic/for_testing/splash.png</file>
+      <file location="${PROJECT_ROOT}/Brainomatic/for_testing" name="readme.txt" optional="true">/Users/Peterz/Documents/brainomatic/Brainomatic/for_testing/readme.txt</file>
+      <file location="${PROJECT_ROOT}/Brainomatic/for_testing" name="run_Brainomatic.sh" optional="false">/Users/Peterz/Documents/brainomatic/Brainomatic/for_testing/run_Brainomatic.sh</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2014b.app</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.10.5</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

@@ -1,0 +1,91 @@
+ant:
+<ant>
+  <mkdir dir="/Users/Peterz/Documents/brainomatic/Brainomatic/for_redistribution" />
+  <mkdir dir="/Users/Peterz/Documents/brainomatic/Brainomatic/for_testing" />
+  <mkdir dir="/Users/Peterz/Documents/brainomatic/Brainomatic/for_redistribution_files_only" />
+</ant>
+mcc -o Brainomatic -W WinMain:Brainomatic -T link:exe -d /Users/Peterz/Documents/brainomatic/Brainomatic/for_testing -v /Users/Peterz/Documents/brainomatic/brainomatic.m 
+Compiler version: 5.2 (R2014b)
+Dependency analysis by REQUIREMENTS.
+[Warning: Requirements cannot analyze
+/Users/Peterz/Documents/MATLAB/spm12trunk/external/yokogawa_meg_reader/getYkgwVersion.p
+unless the user provides a corresponding M-code along with it in the same
+folder. Its dependencies may not be included in the completion, because its
+corresponding M-code found by REQUIREMENTS either is empty or contains nothing
+but comments.] 
+[> In MatlabSymbol>MatlabSymbol.findCorrespondentMCode at 974
+  In Completion>Completion.recordDependency at 728
+  In Completion>@(client,symbol)recordDependency(obj,client,symbol)
+  In MatlabInspector>MatlabInspector.recordDependency at 215
+  In MatlabInspector>MatlabInspector.evaluateSymbols at 386
+  In MatlabInspector>MatlabInspector.analyzeSymbols at 187
+  In Completion>Completion.findDependentFiles at 1103
+  In Completion>Completion.computeDependencies at 234
+  In Completion>Completion.computePartsList at 1656
+  In Completion>Completion.requirements at 1978
+  In requirements at 193] 
+[Warning: Adding path "/Users/Peterz/Documents/brainomatic" to Compiler path
+instance.] 
+Parsing file "/Users/Peterz/Documents/brainomatic/brainomatic.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 49 temporary MEX authorization files.
+Removing: '/tmp/0b86bbeRHfv_47211.auth'.
+Removing: '/tmp/0b86bF5mixj_47211.auth'.
+Removing: '/tmp/0b86bYYHQQO_47211.auth'.
+Removing: '/tmp/0b86bn6V82F_47211.auth'.
+Removing: '/tmp/0b86bUFrgIr_47211.auth'.
+Removing: '/tmp/0b86bIKauOs_47211.auth'.
+Removing: '/tmp/0b86bA6cQjT_47211.auth'.
+Removing: '/tmp/0b86bh6CBuM_47211.auth'.
+Removing: '/tmp/0b86bnMWcwq_47211.auth'.
+Removing: '/tmp/0b86bJNNWvO_47211.auth'.
+Removing: '/tmp/0b86b7cM2TW_47211.auth'.
+Removing: '/tmp/0b86b6zijmo_47211.auth'.
+Removing: '/tmp/0b86bQ9Ujur_47211.auth'.
+Removing: '/tmp/0b86bHFnbqp_47211.auth'.
+Removing: '/tmp/0b86bXh3HSy_47211.auth'.
+Removing: '/tmp/0b86b0c1xh8_47211.auth'.
+Removing: '/tmp/0b86bZT60vO_47211.auth'.
+Removing: '/tmp/0b86bVCVFO4_47211.auth'.
+Removing: '/tmp/0b86b7GOl8h_47211.auth'.
+Removing: '/tmp/0b86bgLovYc_47211.auth'.
+Removing: '/tmp/0b86bTQI1ot_47211.auth'.
+Removing: '/tmp/0b86bCiir1i_47211.auth'.
+Removing: '/tmp/0b86bCbVtaO_47211.auth'.
+Removing: '/tmp/0b86bFKz7DU_47211.auth'.
+Removing: '/tmp/0b86bDpOO2u_47211.auth'.
+Removing: '/tmp/0b86b7tQpmo_47211.auth'.
+Removing: '/tmp/0b86bsMgwsG_47211.auth'.
+Removing: '/tmp/0b86bonCWlj_47211.auth'.
+Removing: '/tmp/0b86bqik4mK_47211.auth'.
+Removing: '/tmp/0b86bbSvOFR_47211.auth'.
+Removing: '/tmp/0b86bEA59Qs_47211.auth'.
+Removing: '/tmp/0b86bzVnJyz_47211.auth'.
+Removing: '/tmp/0b86bPt25Bx_47211.auth'.
+Removing: '/tmp/0b86b0IVo9m_47211.auth'.
+Removing: '/tmp/0b86buYzjqL_47211.auth'.
+Removing: '/tmp/0b86bl5t8xZ_47211.auth'.
+Removing: '/tmp/0b86bG77Mcb_47211.auth'.
+Removing: '/tmp/0b86b5hRJLs_47211.auth'.
+Removing: '/tmp/0b86bKwcSpG_47211.auth'.
+Removing: '/tmp/0b86bsann5J_47211.auth'.
+Removing: '/tmp/0b86b4Cip96_47211.auth'.
+Removing: '/tmp/0b86b29qrNI_47211.auth'.
+Removing: '/tmp/0b86btpM4hI_47211.auth'.
+Removing: '/tmp/0b86bRcjJQx_47211.auth'.
+Removing: '/tmp/0b86bQmsbaH_47211.auth'.
+Removing: '/tmp/0b86bs7P6JP_47211.auth'.
+Removing: '/tmp/0b86bd3oc9g_47211.auth'.
+Removing: '/tmp/0b86bOsHob5_47211.auth'.
+Removing: '/tmp/0b86bg3DnRJ_47211.auth'.
+Generating file "/Users/Peterz/Documents/brainomatic/Brainomatic/for_testing/readme.txt".
+Generating file "/Users/Peterz/Documents/brainomatic/Brainomatic/for_testing/run_Brainomatic.sh".
+Packaging...
+Adding custom icon /Applications/MATLAB_R2014b.app/toolbox/compiler/Resources/default_icon.icns to /Users/Peterz/Documents/brainomatic/Brainomatic/for_testing/Brainomatic.app.
+Creating the bundle...
+Copying /Applications/MATLAB_R2014b.app/toolbox/compiler/maci64/setup.app to /Users/Peterz/Documents/brainomatic/Brainomatic/for_redistribution/MyAppInstaller_web.app.
+Copying /Users/Peterz/Documents/brainomatic/Brainomatic/for_redistribution/bundle.zip to /Users/Peterz/Documents/brainomatic/Brainomatic/for_redistribution/MyAppInstaller_web.app/Contents/Resources/bundle.zip.
+Copying /Applications/MATLAB_R2014b.app/toolbox/compiler/Resources/default_splash.png to /Users/Peterz/Documents/brainomatic/Brainomatic/for_redistribution/MyAppInstaller_web.app/Contents/Resources/splash.png.
+Copying /Applications/MATLAB_R2014b.app/toolbox/compiler/Resources/default_icon.icns to /Users/Peterz/Documents/brainomatic/Brainomatic/for_redistribution/MyAppInstaller_web.app/Contents/Resources/installer.icns.
+Web based installer created at /Users/Peterz/Documents/brainomatic/Brainomatic/for_redistribution/MyAppInstaller_web.app.
+Packaging complete.
