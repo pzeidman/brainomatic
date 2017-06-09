@@ -7,16 +7,17 @@ function brainomatic
 frameLength = 20000;
 
 % Size of buffer for recording
-bufferLengthMins = 7;
+bufferLengthMins = 12;
 
 % Default AM demodulation frequency (off by default)
 am_freq = 1000;
 
-reader        = []; % Reader object
-Fs            = []; % Samples per second
-signal_buffer = []; % All data received so far
-fttx          = {}; % X-axis for each time window's FFT
-ffts          = {}; % Data for each time window's FFT
+reader        = [];     % Reader object
+Fs            = [];     % Samples per second
+signal_buffer = [];     % All data received so far
+fttx          = {};     % X-axis for each time window's FFT
+ffts          = {};     % Data for each time window's FFT
+fft_xlim      = [3 40]; % Default xlimit for FFT
 
 % Default filtering options
 am_enabled     = false;
@@ -90,7 +91,7 @@ zscore_menu_item = uimenu(m,'Label','Z-score signal','Callback',@set_zscore,'Che
 % Settings menu
 m = uimenu('Label','Settings');
 buff_menu_item = uimenu(m,'Label','Buffer length','Callback',@set_buffer_len);
-
+xlim_menu_item = uimenu(m,'Label','Frequency axis','Callback',@set_xlim);
 % -------------------------------------------------------------------------
 function set_input(varargin)
     % Callback for the set input dropdown selector
@@ -118,6 +119,12 @@ function set_input(varargin)
     i = 1;       
 
     % Initialize audio buffer
+    init_buffer();
+end
+
+% -------------------------------------------------------------------------
+function init_buffer()
+    % Initializes the audio buffer
     buffer_length = (bufferLengthMins * 60) * Fs;
     signal_buffer = zeros(1,buffer_length);    
 end
@@ -141,7 +148,8 @@ function go(varargin)
     % Running sum of FFT
     fft_sum = [];
     
-    while true;
+    % Main recording loop
+    while true
         
         % Get data from input
         signal = reader;
@@ -181,12 +189,10 @@ function go(varargin)
         % Update record of total samples
         i = i + frameLength;
 
-        %if i < 100, continue; end
-
         % Plot any previous FFTs
         axes(h2);
         for j = 1:length(ffts)                
-            plot(fttx{j},ffts{j},'Color',[0.7 0.7 0.7]);
+            plot(fttx{j},ffts{j},'Color',[0.7 0 0]);
             hold on;
         end
 
@@ -213,7 +219,7 @@ function go(varargin)
         ylabel('Power','FontSize',12);
         set(gca,'YTickLabel',[]);
         title('Amount of each brain rhythm (whole recording)','FontSize',16);
-        xlim([3 60]);
+        xlim(fft_xlim);
         hold off;
 
         % Refresh display
@@ -315,6 +321,21 @@ function set_am_filtering(varargin)
     end
 end
 % -------------------------------------------------------------------------
+function set_xlim(varargin)
+    % Callback for the set FFT x-axis menu item
+    str = inputdlg({'Minimum:','Maximum:'}, 'FFT x-axis limits', 1, ...
+        {num2str(fft_xlim(1)) num2str(fft_xlim(2))});
+    
+    if isempty(str), return, end
+    
+    fft_min = str2double(str{1});
+    fft_max = str2double(str{2});
+    fft_xlim = [fft_min fft_max];
+    
+    axes(h2);
+    xlim(fft_xlim);
+end
+% -------------------------------------------------------------------------
 function set_zscore(varargin)
     zscore_enabled = ~zscore_enabled;
     
@@ -337,11 +358,13 @@ function set_buffer_len(varargin)
     
     % Prompt to confirm
     yesno = questdlg('All data will be cleared. Continue?',...
-        'Yes','No',struct('Default','No','Interpreter','none')); 
+        'Continue?','Yes','No',struct('Default','No','Interpreter','none')); 
     if ~strcmp(yesno,'Yes'), return; end
     
     perform_reset();
     bufferLengthMins = str2double(str);
+    
+    init_buffer();
 end
 
 end
